@@ -1,0 +1,129 @@
+.footer {
+  background-color: $secondaryBackgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer--centered {
+  @include flex(baseline);
+  // display: flex;
+  // align-items: baseline;
+}
+
+.footer__logo {
+  color: $whiteColor;
+  padding: 0;
+  margin: 0;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__link {
+  color: $whiteColor;
+  font-style: normal;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address__item {
+  margin-top: 9px;
+}
+
+.footer__contact-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.footer-socials {
+  margin-left: 70px;
+}
+
+.footer-socials__title,
+.subscribe-label {
+  color: $whiteColor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-socials__title {
+  margin-bottom: 20px;
+}
+
+.footer-socials__list--position {
+  @include flex;
+  // display: flex;
+  // justify-content: center;
+}
+
+.footer-socials__link {
+  color: $whiteColor;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+
+.subscribe-form {
+  @include flex(flex-end);
+  // display: flex;
+  // align-items: flex-end;
+  margin-left: 93px;
+  margin-right: auto;
+}
+
+.subscribe-form__title {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscribe-form__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: $secondaryBackgroundColor;
+  color: rgba(255, 255, 255, 0.6);
+  outline: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.subscribe-form__icon {
+  margin-left: 10px;
+}
+
+.subscribe-form__btn {
+  @include flex;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: $accentColor;
+  color: $whiteColor;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: transparent;
+}
