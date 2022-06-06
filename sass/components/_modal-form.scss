@@ -36,10 +36,10 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  @include flex;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -59,10 +59,10 @@
 }
 
 .modal-form {
-  @include flex(column);
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal-form__title {
@@ -76,17 +76,17 @@
 }
 
 .modal-form__group {
-  @include flex(column);
-  // display: flex;
-  // flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
   width: 448px;
 }
 
 .modal-form__label {
   position: relative;
-  @include flex(column);
-  // display: flex;
-  // flex-direction: column;
+
+  display: flex;
+  flex-direction: column;
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.16;
@@ -139,16 +139,16 @@
 }
 
 .modal-form__agreement-form {
-  @include flex;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-form__agreement-label {
-  @include flex;
-  // display: flex;
-  // align-items: center;
+
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-txt {
@@ -161,10 +161,10 @@
 }
 
 .modal-form__checkbox {
-  @include flex;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   margin-right: 7px;

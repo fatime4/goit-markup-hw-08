@@ -5,9 +5,8 @@
 }
 
 .footer--centered {
-  @include flex(baseline);
-  // display: flex;
-  // align-items: baseline;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer__logo {
@@ -64,9 +63,8 @@
 }
 
 .footer-socials__list--position {
-  @include flex;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-socials__link {
@@ -81,9 +79,8 @@
 }
 
 .subscribe-form {
-  @include flex(flex-end);
-  // display: flex;
-  // align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
   margin-left: 93px;
   margin-right: auto;
 }
@@ -110,10 +107,9 @@
 }
 
 .subscribe-form__btn {
-  @include flex;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 50px;
   background-color: $accentColor;

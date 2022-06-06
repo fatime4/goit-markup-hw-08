@@ -1,18 +1,15 @@
 .nav-box {
-  @include flex;
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-navigation {
-  @include flex;
-  // display: flex;
+  display: flex;
 }
 
 .header-navigation__link {
-  @include flex(baseline);
-  // display: flex;
-  // align-items: baseline;
+  display: flex;
+  align-items: baseline;
   color: $titleTextColor;
   font-weight: 500;
   line-height: 1.14;

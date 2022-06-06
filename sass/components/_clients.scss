@@ -1,7 +1,6 @@
 .clients {
-  @include flex;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -12,10 +11,9 @@
 }
 
 .clients__link {
-  @include flex;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   color: $iconCurrentColor;
@@ -31,7 +29,6 @@
 }
 
 .clients__icon {
-  @include icon-form-color(fill);
-  // fill: currentColor;
+  fill: currentColor;
   background-size: contain;
 }

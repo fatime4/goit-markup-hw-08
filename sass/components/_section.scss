@@ -12,9 +12,12 @@
   background-color: $whiteColor;
 }
 
+.container__benefits {
+  padding-bottom: 0;
+}
+
 .section-box {
-  @include flex;
-  // display: flex;
+  display: flex;
 }
 
 .team__item,
