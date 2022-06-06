@@ -7,18 +7,32 @@
 }
 
 .container--form {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $whiteColor;
+  
+
+  @media screen and (max-width: 478px) and (max-width: 766px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1198px) {
+    padding-top: 94px;
+  }
 }
 
-.container__benefits {
-  padding-bottom: 0;
-}
+// .container--form {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+//   background-color: $whiteColor;
+// }
 
-.section-box {
-  display: flex;
-}
+// .container__benefits {
+//   padding-bottom: 0;
+// }
+
+// .section-box {
+//   display: flex;
+// }
 
 .team__item,
 .portfolio-cards__item--geometry {
