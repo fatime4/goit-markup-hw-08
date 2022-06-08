@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  max-width: 450px;
 
   @include media(not-desktop) {
     flex-wrap: wrap;
@@ -9,17 +10,20 @@
 }
 
 .clients__item {
-  &:not(:last-child) {
+  &:nth-child(odd) {
     margin-right: 30px;
   }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
-  @include media(mobile) {
-    margin-bottom: 30px;
+  // @include media(mobile) {
+  //   margin-bottom: 30px;
 
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-  }
+  //   &:nth-child(odd) {
+  //     margin-right: 30px;
+  //   }
+  // }
 
   @include media(tablet) {
     &:nth-child(1n + 3) {
@@ -36,7 +40,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  // width: 170px;
+  width: 210px;
   height: 92px;
   color: $iconCurrentColor;
   border: 1px solid $iconCurrentColor;

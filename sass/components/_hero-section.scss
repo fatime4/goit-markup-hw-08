@@ -1,39 +1,43 @@
 .hero__title {
   color: $whiteColor;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  width: 360px;
 
-  @include media(mobile) {
-    font-size: 26px;
-    line-height: 1.62;
+  @include media(tablet) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  @include media(desktop) {
+    width: 696px;
   }
 }
 
 .hero--form {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  @include media(mobile) {
-    padding-top: 118px;
-    padding-bottom: 118px;
+  @include media(tablet) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
 .hero {
   background-color: $secondaryBackgroundColor;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img.jpg);
-  max-width: 1600px;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
+  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  //   url(../images/hero-img.jpg);
+  // max-width: 1600px;
+  // background-position: center;
+  // background-size: cover;
+  // margin-left: auto;
+  // margin-right: auto;
 }

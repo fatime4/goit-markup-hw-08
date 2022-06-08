@@ -1,0 +1,15 @@
+.menu-icon-box {
+  fill: $blackColor;
+  width: 24px;
+  height: 16px;
+  padding: 12px 8px;
+
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+  }
+
+  @include media(tablet) {
+    display: none;
+  }
+}

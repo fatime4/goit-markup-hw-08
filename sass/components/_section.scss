@@ -13,17 +13,10 @@
 .container--form {
   background-color: $whiteColor;
 
-  @media screen and (max-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @media screen and (max-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (max-width: 1200px) {
+  @include media(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -47,12 +40,12 @@
   }
 }
 
-.team__item,
-.portfolio-cards__item--geometry {
-  display: block;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
+// .team__item,
+// .portfolio-cards__item--geometry {
+//   display: block;
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+// }
 
 .section-box__label {
   position: absolute;
