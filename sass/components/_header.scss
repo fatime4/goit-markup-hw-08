@@ -1,9 +1,9 @@
 .header {
   border-bottom: 1px solid $headerBorderColor;
 
-  @include media(tablet) {
-    height: 80px;
-  }
+  // @include media(tablet) {
+  //   height: 80px;
+  // }
 }
 
 .header-box {

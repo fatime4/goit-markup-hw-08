@@ -344,12 +344,6 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 768px) {
-  .header {
-    height: 80px;
-  }
-}
-
 .header-box {
   position: relative;
   display: -webkit-box;
