@@ -26,12 +26,18 @@
     }
   }
 
-  @include media(tablet) {
+  @include media(tablet-only) {
     &:nth-child(n + 4) {
       margin-bottom: 0px;
     }
 
     &:not(:nth-child(3n + 3)) {
+      margin-right: 30px;
+    }
+  }
+
+  @include media(desktop) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
@@ -41,7 +47,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 170px;
   width: 210px;
   height: 92px;
   color: $iconCurrentColor;
@@ -57,6 +62,10 @@
 
   @include media(tablet) {
     width: 226px;
+  }
+
+  @include media(desktop) {
+    width: 170px;
   }
 }
 
