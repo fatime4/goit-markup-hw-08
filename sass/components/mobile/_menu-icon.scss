@@ -1,8 +1,6 @@
-.menu-icon-box {
+.menu-icons--color {
   fill: $blackColor;
-  width: 24px;
-  height: 16px;
-  padding: 12px 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -12,4 +10,32 @@
   @include media(tablet) {
     display: none;
   }
+}
+
+.menu-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  top: 10px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }

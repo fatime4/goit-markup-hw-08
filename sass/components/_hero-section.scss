@@ -11,13 +11,10 @@
   margin-bottom: 30px;
   width: 360px;
 
-  @include media(tablet) {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-
   @include media(desktop) {
     width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
@@ -25,7 +22,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @include media(tablet) {
+  @include media(desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
   }

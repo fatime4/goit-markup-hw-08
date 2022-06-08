@@ -40,12 +40,34 @@
   }
 }
 
-// .team__item,
-// .portfolio-cards__item--geometry {
-//   display: block;
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-// }
+.section-box__item {
+  position: relative;
+  display: block;
+
+  @include media(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media(tablet) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include media(desktop) {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
 
 .section-box__label {
   position: absolute;
