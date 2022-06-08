@@ -13,17 +13,17 @@
 .container--form {
   background-color: $whiteColor;
 
-  @include media(mobile) {
+  @media screen and (max-width: 480px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  @include media(tablet) {
+  @media screen and (max-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 
-  @include media(desktop) {
+  @media screen and (max-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }

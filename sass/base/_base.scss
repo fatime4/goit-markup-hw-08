@@ -17,7 +17,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 449px;
+  min-width: 320px;
 
   @include media(mobile) {
     max-width: 450px;
