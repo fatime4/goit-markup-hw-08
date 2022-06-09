@@ -1,45 +1,23 @@
 .clients {
   display: flex;
-  // justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  // max-width: 450px;
 
-  // @include media(not-desktop) {
-  //   flex-wrap: wrap;
-  // }
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  &:nth-child(even) {
-    margin-right: -30px;
-  }
+  // // calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
+  min-height: 92px;
+  margin: 15px;
 
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 2);
 
-  &:nth-child(n + 5) {
-    margin-bottom: 0;
-  }
-  @include media(mobile-only) {
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-  }
-
-  @include media(tablet-only) {
-    &:nth-child(n + 4) {
-      margin-bottom: 0px;
-    }
-
-    &:not(:nth-child(3n + 3)) {
-      margin-right: 30px;
-    }
+  @include media(tablet) {
+    flex-basis: calc((100% - 90px) / 3);
   }
 
   @include media(desktop) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 
@@ -47,8 +25,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
+
   color: $iconCurrentColor;
   border: 1px solid $iconCurrentColor;
   border-radius: 5px;

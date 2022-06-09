@@ -22,7 +22,7 @@
   @include media(tablet) {
     display: flex;
     flex-direction: column;
-    margin-left: 0;
+    margin-left: auto;
   }
 
   @include media(desktop) {

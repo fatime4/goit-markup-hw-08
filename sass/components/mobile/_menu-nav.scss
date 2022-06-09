@@ -12,11 +12,11 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   overflow-y: scroll;
-  z-index: 2;
+  z-index: 1;
   display: none;
 
   &.is-open {
-    display: block;
+    display: flex;
   }
 }
 

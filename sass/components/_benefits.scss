@@ -1,3 +1,7 @@
+.works--form .section-box__item {
+  flex-basis: calc((100% - 90px) / 3);
+}
+
 .benefits__icon {
   height: 120px;
   border-radius: 4px;
