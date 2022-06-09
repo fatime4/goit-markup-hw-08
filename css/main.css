@@ -903,7 +903,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    min-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-m.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-m.jpg);
   }
@@ -1121,9 +1120,16 @@ img {
           transform: translateY(160%);
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-cards__overlay {
+    padding: 77px 24px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-cards__overlay {
     width: 354px;
+    padding: 49px 24px;
   }
 }
 
@@ -1141,7 +1147,7 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .portfolio-cards__overlay-label {
     font-size: 18px;
   }
