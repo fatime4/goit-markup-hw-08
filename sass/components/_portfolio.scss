@@ -1,32 +1,13 @@
 .portfolio-cards__item--geometry {
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin: 15px;
+  height: 404px;
 
-  @include media(tablet-only) {
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+  @include media(tablet) {
+    flex-basis: calc((100% - 60px) / 2);
   }
 
   @include media(desktop) {
-    margin-right: -30px;
-
-    &:nth-child(3n + 3) {
-      margin-right: 0px;
-    }
-
-    &:nth-child(n + 7) {
-      margin-bottom: 0;
-    }
-
-    &:not(:nth-child(3n + 3)) {
-      margin-right: 30px;
-    }
+    flex-basis: calc((100% - 90px) / 3);
   }
 }
 
@@ -132,15 +113,16 @@
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
-  width: 100%;
+  margin: -15px;
+  // margin-bottom: -30px;
+  // margin-right: -30px;
 }
 
 .portfolio-cards__item {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  height: 100%;
+  width: 100%;
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

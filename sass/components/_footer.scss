@@ -140,6 +140,10 @@
 .subscribe-form__title {
   display: inline-block;
   margin-bottom: 20px;
+
+  @include media(not-desktop) {
+    align-items: center;
+  }
 }
 
 .subscribe-form__input {
