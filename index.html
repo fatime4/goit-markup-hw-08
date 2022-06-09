@@ -552,21 +552,22 @@
         </div>
         <form class="subscribe-form">
           <h2 class="subscribe-form__title">Подпишитесь на рассылку</h2>
+          <div class="subscribe-form__wrapper">
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
 
-          <input
-            class="subscribe-form__input"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail"
-          />
-
-          <button class="subscribe-form__btn" type="submit">
-            <span>Подписаться</span>
-            <svg class="subscribe-form__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
+            <button class="subscribe-form__btn" type="submit">
+              <span>Подписаться</span>
+              <svg class="subscribe-form__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
       </div>
     </footer>
