@@ -44,7 +44,6 @@
 .header-contact__item {
   @include media(tablet-only) {
     font-size: 12px;
-    margin-left: 84px;
     margin-right: 0;
 
     &:not(:last-child) {

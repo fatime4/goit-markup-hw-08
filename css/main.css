@@ -413,7 +413,6 @@ img {
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .header-contact__item {
     font-size: 12px;
-    margin-left: 84px;
     margin-right: 0;
   }
   .header-contact__item:not(:last-child) {
@@ -635,10 +634,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100%;
   height: 100%;
-  padding: 48px 0;
-  padding-left: 40px;
+  padding: 48px 40px;
   background-color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -673,8 +671,14 @@ img {
 
 .mobile-menu__contact-tel {
   margin-top: auto;
-  font-size: 34px;
+  font-size: 24px;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__contact-tel {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__contact-mail {
@@ -688,6 +692,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -868,27 +874,24 @@ img {
   }
 }
 
-.hero--form {
+.hero {
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-s.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-s.jpg);
+  max-width: 1600px;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
 }
 
 @media screen and (min-width: 1200px) {
-  .hero--form {
+  .hero {
     padding-top: 200px;
     padding-bottom: 200px;
   }
-}
-
-.hero {
-  background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-s.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-s.jpg);
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 480px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -900,7 +903,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    min-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-m.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-m.jpg);
   }
@@ -915,7 +918,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-l.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-l.jpg);
   }
@@ -1106,8 +1108,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 450px;
-  padding: 77px 24px;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
   background-color: rgba(33, 150, 243, 0.9);
   overflow: hidden;
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1132,10 +1135,16 @@ img {
 }
 
 .portfolio-cards__overlay-label {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-cards__overlay-label {
+    font-size: 18px;
+  }
 }
 
 .portfolio-cards {
@@ -1169,12 +1178,6 @@ img {
 }
 
 .portfolio-cards__item:hover .portfolio-cards__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1801,6 +1804,12 @@ img {
   line-height: 1.71;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .checkbox-txt {
+    font-size: 12px;
+  }
+}
+
 .checkbox-link {
   line-height: 1.71;
   color: #2196f3;
@@ -1822,7 +1831,7 @@ img {
   height: 15px;
   margin-right: 7px;
   border-radius: 2px;
-  outline: 2px solid #2196f3;
+  outline: 2px solid #000000;
   outline-offset: -2px;
   background-color: #ffffff;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1840,6 +1849,7 @@ img {
 
 .checkbox:checked + .modal-form__checkbox {
   background-color: #2196f3;
+  outline: transparent;
 }
 
 .modal-form__send-btn {

@@ -161,6 +161,10 @@
 
 .checkbox-txt {
   line-height: 1.71;
+
+  @include media(not-desktop) {
+    font-size: 12px;
+  }
 }
 
 .checkbox-link {
@@ -177,7 +181,7 @@
   height: 15px;
   margin-right: 7px;
   border-radius: 2px;
-  outline: 2px solid $accentColor;
+  outline: 2px solid $blackColor;
   outline-offset: -2px;
   background-color: $whiteColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -194,6 +198,7 @@
 
 .checkbox:checked + .modal-form__checkbox {
   background-color: $accentColor;
+  outline: transparent;
 }
 
 .modal-form__send-btn {
