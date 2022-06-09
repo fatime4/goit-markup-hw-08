@@ -7,7 +7,6 @@
 .footer__address {
   @include media(tablet-only) {
     margin-right: 165px;
-    margin-left: 76px;
   }
 }
 
@@ -30,7 +29,7 @@
 }
 
 .footer--tablet {
-  @include media(tablet-only) {
+  @include media(tablet) {
     display: flex;
     justify-content: space-around;
   }
@@ -44,6 +43,10 @@
   @include media(not-desktop) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @include media(desktop) {
+    margin-left: 0;
   }
 }
 
@@ -79,10 +82,6 @@
   @include media(tablet) {
     margin-top: 0;
   }
-
-  @include media(desktop) {
-    margin-left: 70px;
-  }
 }
 
 .footer__contacts {
@@ -99,7 +98,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+
+  @include media(not-desktop) {
+    text-align: center;
+  }
 }
 
 .footer-socials__title {
@@ -130,14 +132,13 @@
   @include media(desktop) {
     display: flex;
     align-items: flex-end;
-    margin-left: 93px;
-    margin-right: auto;
+    margin-bottom: 93px;
+    margin-left: auto;
   }
 }
 
 .subscribe-form__title {
-  display: block;
-  align-items: flex-end;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -145,7 +146,6 @@
   max-width: 450px;
   width: 100%;
   height: 50px;
-
   margin-bottom: 20px;
   padding: 15px 16px;
   background-color: $secondaryBackgroundColor;
@@ -160,8 +160,8 @@
   }
 
   @include media(desktop) {
-    width: 358px;
-    margin-right: 12px;
+    max-width: 358px;
+    margin: 0;
   }
 }
 
